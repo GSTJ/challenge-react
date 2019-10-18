@@ -8,8 +8,11 @@ export default () => (
     <Provider store={Store}>
         <Router>
             <Switch>
-                <Route path="/" component={Page.Pokedex} />
+                <Route path="/pokemon/:name" component={Page.Pokemon} />
+                <Route path="/pokemons/:index" component={Page.Pokedex} />
+                <Route path="/pokemons" component={Page.Pokedex} />
             </Switch>
         </Router>
     </Provider>
 )
+//
